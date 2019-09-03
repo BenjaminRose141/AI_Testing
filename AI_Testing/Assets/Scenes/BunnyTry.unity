@@ -112,6 +112,36 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &31971602
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 31971603}
+  m_Layer: 0
+  m_Name: Player
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &31971603
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 31971602}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 50, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &170076733
 GameObject:
   m_ObjectHideFlags: 0
@@ -293,7 +323,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eed48e2d6c0b5154d8cceed7ea2c25e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  actor: {fileID: 0}
+  actor: {fileID: 1883735384}
 --- !u!114 &1883735384
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -306,10 +336,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a91c0edaa4ac2af498ac3f2e062188b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 31971602}
   aggroRange: 20
   meleeRange: 3
   think: 0
-  currentAction: 
+  bunnyBrain: {fileID: 1883735383}
+  currentAction: none
 --- !u!4 &1883735385
 Transform:
   m_ObjectHideFlags: 0
